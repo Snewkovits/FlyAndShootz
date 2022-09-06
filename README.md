@@ -1,5 +1,6 @@
 # Fly and Shootz
 
+### FONTOS!
 .NET keretrendszerben 4.7.2-es verzióval készült ezért lehetséges, hogy a keretrendszert telepíteni kell a program használata előtt.
 
 ### Telepítő fájlok:
