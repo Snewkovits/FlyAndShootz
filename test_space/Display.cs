@@ -36,6 +36,9 @@ namespace FlyAndShootz
         public static bool isEnemy = false;
         public static bool isEnemyProjectile = false;
 
+        public static double StatKilledEnemies = 0;
+        public static double StatFiredProjectiles = 0;
+
         /// <summary>
         /// Autómatikus kijelzés (csak külön szálon működik!).
         /// </summary>
@@ -113,7 +116,10 @@ namespace FlyAndShootz
                 Console.WriteLine($"Pontosság: {KilledEnemies / FiredProjectiles * 100}%");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Megölt ellenfelek: {KilledEnemies}, Kilőtt lövedékek: {FiredProjectiles}");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("A játékot készítette: ");
                 Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("Szabó Ádám");
             }
         }
 

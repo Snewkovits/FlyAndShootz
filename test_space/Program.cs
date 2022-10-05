@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Xml.Schema;
+using System.Xml.Linq;
 
 namespace FlyAndShootz
 {
@@ -18,10 +19,12 @@ namespace FlyAndShootz
         private static Thread DisplayThread;
         static void Main(string[] args)
         {
+            Console.Title = "Fly and Shootz";
             while (true)
             {
                 if (!epi)
                 {
+                    Data.GetSave();
                     Menus.EpilepsziaFelhivas();
                     epi = !epi;
                 }

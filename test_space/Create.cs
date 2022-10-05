@@ -40,6 +40,7 @@ namespace FlyAndShootz
         {
             Display.xProjPos = Display.xPos;
             Display.yProjPos = Display.yPos;
+            Console.Beep(100, 100);
             while (Display.isProjectile)
             {
                 Thread.Sleep(100);
@@ -72,6 +73,9 @@ namespace FlyAndShootz
                     Delete.Enemy();
                     Delete.Projectile();
                     Display.KilledEnemies++;
+                    Console.Beep(400, 100);
+                    Thread.Sleep(1);
+                    Console.Beep(1200, 100);
                 }
                 else if (Display.yEnemyPos == 1)
                 {
@@ -110,6 +114,7 @@ namespace FlyAndShootz
                         Console.WriteLine("Meghaltál! Nyomj egy akármilyen gombot a folytatáshoz!");
                         Thread.Sleep(500);
                     }
+                    Data.Save();
                 }
                 Thread.Sleep(400);
                 if (Display.xEnemyProjPos == Display.Height - 1)

@@ -33,6 +33,9 @@ namespace FlyAndShootz
                 Console.ForegroundColor = ConsoleColor.White;
                 if (SelectedMenu == 2) { Console.ForegroundColor = ConsoleColor.Green; }
                 Console.WriteLine("Kilépés");
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine();
+                Console.WriteLine($"Legjobb adat: Megölt ellenfelek {Display.StatKilledEnemies}; Kilőtt lövedékek: {Display.StatFiredProjectiles}");
                 Pressed = Console.ReadKey(true).Key;
                 switch (Pressed)
                 {
