@@ -46,7 +46,7 @@ namespace FlyAndShootz
         {
             while (Program.isProgram)
             {
-                Thread.Sleep(100);
+                Thread.Sleep(50);
                 Console.Clear();
                 Console.WriteLine("Mozgás: nyilak, Lövés: Spacebar, Ellenfél létrehozása: E");
                 for (int x = 0; x <= Height; x++)

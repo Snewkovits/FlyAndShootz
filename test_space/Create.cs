@@ -68,16 +68,24 @@ namespace FlyAndShootz
                 }
                 EnemyNextMove = EnemyMoves.Next(0, 2);
                 EnemyMoveDone = false;
-                if (Display.yEnemyPos == Display.yProjPos && Display.xEnemyPos == Display.xProjPos)
+                new Thread(() =>
                 {
-                    Delete.Enemy();
-                    Delete.Projectile();
-                    Display.KilledEnemies++;
-                    Console.Beep(400, 100);
-                    Thread.Sleep(1);
-                    Console.Beep(1200, 100);
-                }
-                else if (Display.yEnemyPos == 1)
+                    while (Display.isProjectile)
+                    {
+                        if (Display.yEnemyPos == Display.yProjPos && Display.xEnemyPos == Display.xProjPos)
+                        {
+                            Delete.Enemy();
+                            Delete.Projectile();
+                            Display.KilledEnemies++;
+                            Console.Beep(400, 100);
+                            Thread.Sleep(1);
+                            Console.Beep(1200, 100);
+                        }
+                        Thread.Sleep(10);
+                    }
+
+                }){ Name = "ProjectileChech" }.Start();
+                if (Display.yEnemyPos == 1)
                 {
                     Display.yEnemyPos++;
                     EnemyMoveDone = true;
