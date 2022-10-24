@@ -1,0 +1,8 @@
+C:\Users\adamh\repos\test_space\test_space\bin\Release\test_space.exe.config
+C:\Users\adamh\repos\test_space\test_space\bin\Release\test_space.exe
+C:\Users\adamh\repos\test_space\test_space\bin\Release\test_space.pdb
+C:\Users\adamh\repos\test_space\test_space\obj\Release\FlyAndShootz.csproj.AssemblyReference.cache
+C:\Users\adamh\repos\test_space\test_space\obj\Release\FlyAndShootz.csproj.SuggestedBindingRedirects.cache
+C:\Users\adamh\repos\test_space\test_space\obj\Release\FlyAndShootz.csproj.CoreCompileInputs.cache
+C:\Users\adamh\repos\test_space\test_space\obj\Release\test_space.exe
+C:\Users\adamh\repos\test_space\test_space\obj\Release\test_space.pdb

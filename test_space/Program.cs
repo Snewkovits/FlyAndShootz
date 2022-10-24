@@ -18,6 +18,7 @@ namespace FlyAndShootz
         private static Thread DisplayThread;
         static void Main(string[] args)
         {
+            Console.Title = "Fly and Shootz";
             while (true)
             {
                 if (!epi)

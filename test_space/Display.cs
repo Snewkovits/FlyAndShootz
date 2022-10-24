@@ -113,7 +113,10 @@ namespace FlyAndShootz
                 Console.WriteLine($"Pontosság: {KilledEnemies / FiredProjectiles * 100}%");
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Megölt ellenfelek: {KilledEnemies}, Kilőtt lövedékek: {FiredProjectiles}");
+                Console.ForegroundColor = ConsoleColor.DarkGray;
+                Console.Write("A játékot készítette: ");
                 Console.ForegroundColor = ConsoleColor.White;
+                Console.Write("Szabó Ádám");
             }
         }
 

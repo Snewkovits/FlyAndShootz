@@ -1,0 +1,8 @@
+C:\Users\adamh\repos\test_space\test_space\obj\Debug\test_space.csproj.AssemblyReference.cache
+C:\Users\adamh\repos\test_space\test_space\obj\Debug\test_space.csproj.SuggestedBindingRedirects.cache
+C:\Users\adamh\repos\test_space\test_space\obj\Debug\test_space.csproj.CoreCompileInputs.cache
+C:\Users\adamh\repos\test_space\test_space\bin\Debug\test_space.exe.config
+C:\Users\adamh\repos\test_space\test_space\bin\Debug\test_space.exe
+C:\Users\adamh\repos\test_space\test_space\bin\Debug\test_space.pdb
+C:\Users\adamh\repos\test_space\test_space\obj\Debug\test_space.exe
+C:\Users\adamh\repos\test_space\test_space\obj\Debug\test_space.pdb

@@ -21,7 +21,25 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_272445EAAE4E4BCEB2606B8EDB351668"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_A1FBD91222268A7FEEB0A3F0E7D89A24"
+        "OwnerKey" = "8:_145EF267C0884A0D8816F51294E9B12B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_C075C13DE7AF47668F62D67B927063B8"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_145EF267C0884A0D8816F51294E9B12B"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -29,12 +47,6 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A1FBD91222268A7FEEB0A3F0E7D89A24"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_145EF267C0884A0D8816F51294E9B12B"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -55,6 +67,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -71,6 +91,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -100,6 +128,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_272445EAAE4E4BCEB2606B8EDB351668"
+            {
+            "SourcePath" = "8:..\\..\\..\\Desktop\\Armed_forces_red_triangle.svg.ico"
+            "TargetName" = "8:game_icon.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_17C7309B369C4F75A9FF462329007370"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A1FBD91222268A7FEEB0A3F0E7D89A24"
             {
             "AssemblyRegister" = "3:1"
@@ -129,6 +177,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C075C13DE7AF47668F62D67B927063B8"
+            {
+            "SourcePath" = "8:..\\..\\..\\Desktop\\401036.ico"
+            "TargetName" = "8:delete.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_17C7309B369C4F75A9FF462329007370"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -186,26 +254,26 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:FlyAndShootzSetup"
+        "ProductName" = "8:Fly and Shootz"
         "ProductCode" = "8:{C8FAC33E-A698-42C4-9691-527514DD1DBF}"
         "PackageCode" = "8:{4BB6DB51-41F3-42EE-A263-40D2396A860A}"
         "UpgradeCode" = "8:{C6827641-9027-4F0A-AD5E-B7591408F11B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
-        "RemovePreviousVersions" = "11:FALSE"
+        "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
-        "InstallAllUsers" = "11:FALSE"
+        "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
-        "Manufacturer" = "8:Default Company Name"
+        "Manufacturer" = "8:Snewkovits"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:FlyAndShootzSetup"
+        "Title" = "8:Fly and Shootz Setup"
         "Subject" = "8:"
-        "ARPCONTACT" = "8:Default Company Name"
+        "ARPCONTACT" = "8:Szabó Ádám"
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_C075C13DE7AF47668F62D67B927063B8"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -319,7 +387,7 @@
             "Target" = "8:_145EF267C0884A0D8816F51294E9B12B"
             "Folder" = "8:_61B95FC7B3F3444691F080759F948702"
             "WorkingFolder" = "8:_17C7309B369C4F75A9FF462329007370"
-            "Icon" = "8:"
+            "Icon" = "8:_272445EAAE4E4BCEB2606B8EDB351668"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_A9B4059DF3A44F37B89A46A506941B4E"
@@ -333,7 +401,7 @@
             "Target" = "8:_145EF267C0884A0D8816F51294E9B12B"
             "Folder" = "8:_72AD5FDFD90B4F0F9B09276F6E0E644F"
             "WorkingFolder" = "8:_17C7309B369C4F75A9FF462329007370"
-            "Icon" = "8:"
+            "Icon" = "8:_272445EAAE4E4BCEB2606B8EDB351668"
             "Feature" = "8:"
             }
         }
