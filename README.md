@@ -8,6 +8,6 @@
 
 ### Újdonságok:
 
-[x] Bugfix
-[x] Optimalizálás
-[x] Lementi az eddigi legjobb statot
+- [x] Bugfix
+- [x] Optimalizálás
+- [x] Lementi az eddigi legjobb statot
