@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,49 +10,33 @@ namespace FlyAndShootz
 {
     internal class Data
     {
-        private static string SaveDirection = @"C:\Users\Public\Documents\FlyAndShootzSaves.txt";
+        private static string SaveDirection = @"Saves.csv";
         public static void Save()
         {
-            try
+            string data = $"{Display.KilledEnemies};{Display.FiredProjectiles}";
+            string[] dataTable = GetSave();
+            if (Convert.ToDouble(dataTable[0]) < Display.KilledEnemies)
             {
-                string[] datas = System.IO.File.ReadAllLines(SaveDirection);
-
-                if (Convert.ToDouble(datas[0]) < Display.KilledEnemies)
+                Display.StatKilledEnemies = Display.KilledEnemies;
+                Display.StatFiredProjectiles = Display.FiredProjectiles;
+                using (StreamWriter sw = new StreamWriter(SaveDirection))
                 {
-                    string[] DataArray = { Display.KilledEnemies.ToString(), Display.FiredProjectiles.ToString() };
-                    System.IO.File.WriteAllLines(SaveDirection, DataArray);
+                    sw.Write(data);
                 }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
             }
         }
 
-        public static void GetSave()
+        // Killed, Fired
+        public static string[] GetSave()
         {
-            try
+            string[] data = new string[2];
+
+            using (StreamReader sr = new StreamReader(SaveDirection))
             {
-                int a = 0;
-                string[] datas = System.IO.File.ReadAllLines(SaveDirection);
-                foreach (string data in datas)
-                {
-                    switch (a)
-                    {
-                        case 0:
-                            Display.StatKilledEnemies = Convert.ToDouble(datas[a]);
-                            a++;
-                            break;
-                        case 1:
-                            Display.StatFiredProjectiles = Convert.ToDouble(datas[a]);
-                            break;
-                    }
-                }
+                string line = sr.ReadLine();
+                data = line.Split(';');
             }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex);
-            }
+            return data;
         }
     }
 }

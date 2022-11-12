@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Serialization;
 using System.Threading;
 using Microsoft.SqlServer.Server;
+using System.Xml.Linq;
 
 namespace FlyAndShootz
 {
@@ -19,19 +20,13 @@ namespace FlyAndShootz
             switch (data)
             {
                 case "projectile":
-                    Thread ProjectileThread = new Thread(Projectile);
-                    ProjectileThread.Name = "Projectile";
-                    ProjectileThread.Start();
+                    new Thread(Projectile) { Name = "Projectile" }.Start();
                     break;
                 case "enemy":
-                    Thread EnemyThread = new Thread(Enemy);
-                    EnemyThread.Name = "Enemy";
-                    EnemyThread.Start();
+                    new Thread(Enemy) { Name = "Enemy" }.Start();
                     break;
                 case "enemyprojectile":
-                    Thread EnemyProjectileThread = new Thread(EnemyProjectile);
-                    EnemyProjectileThread.Name = "EnemyProjectile";
-                    EnemyProjectileThread.Start();
+                    new Thread(EnemyProjectile) { Name = "EnemyProjectile" }.Start();
                     break;
             }
         }

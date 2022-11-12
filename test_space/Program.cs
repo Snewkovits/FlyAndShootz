@@ -20,6 +20,9 @@ namespace FlyAndShootz
         static void Main(string[] args)
         {
             Console.Title = "Fly and Shootz";
+            string[] savearg = Data.GetSave();
+            Display.StatKilledEnemies = Convert.ToDouble(savearg[0]);
+            Display.StatFiredProjectiles = Convert.ToDouble(savearg[1]);
             while (true)
             {
                 if (!epi)
