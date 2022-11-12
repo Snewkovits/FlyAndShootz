@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FlyAndShootz
 {
@@ -30,11 +25,22 @@ namespace FlyAndShootz
         public static string[] GetSave()
         {
             string[] data = new string[2];
-
-            using (StreamReader sr = new StreamReader(SaveDirection))
+            try
             {
-                string line = sr.ReadLine();
-                data = line.Split(';');
+                using (StreamReader sr = new StreamReader(SaveDirection))
+                {
+                    string line = sr.ReadLine();
+                    data = line.Split(';');
+                }
+            }
+            catch
+            {
+                data[0] = "0";
+                data[1] = "0";
+                using (StreamWriter sw = new StreamWriter(SaveDirection))
+                {
+                    sw.Write($"{data[0]};{data[1]}");
+                }
             }
             return data;
         }
